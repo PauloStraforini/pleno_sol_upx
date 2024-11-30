@@ -9,9 +9,6 @@ import sun2 from "@/components/img/sun2.png";
 import Link from "next/link";
 
 
-
-
-
 export default function FirsPage() {
 
   return (
@@ -48,7 +45,7 @@ export default function FirsPage() {
                 Simples, eficiente e sustentável. 🌞
               </p>
 
-              <Link href="/singUp">
+              <Link href="/sing">
                 
                   <Button className="mt-8 bg-green-700 text-white hover:bg-green-600">
                     Venha com a gente
@@ -56,8 +53,6 @@ export default function FirsPage() {
                 
               </Link>
   
-      
-
               
             </div>
             <div className="hidden lg:block">
@@ -188,11 +183,11 @@ export default function FirsPage() {
             manutenção e otimização do desempenho do seu sistema solar.
           </p>
 
-          <a href="/dashboard">
+          <Link href="/sing">
             <Button className="mt-8 bg-green-700 text-white hover:bg-green-600">
               Venha com a gente
             </Button>
-          </a>
+          </Link>
           
         </div>
       </section>
