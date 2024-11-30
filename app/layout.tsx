@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import { Dashboard } from "./dashborad";
 
 
 
@@ -37,7 +38,7 @@ export default function RootLayout({
           >
             
             {children}
-            
+            <Dashboard/>
             
             
 
