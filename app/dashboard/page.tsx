@@ -19,7 +19,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 
-export function Dashboard() {
+export default function Dashboard() {
   return (
     
     
