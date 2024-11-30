@@ -170,13 +170,13 @@ export function Big_Chart() {
           </SelectTrigger>
           <SelectContent className="rounded-xl">
             <SelectItem value="90d" className="rounded-lg">
-              Last 3 meses
+              Ultimos 3 meses
             </SelectItem>
             <SelectItem value="30d" className="rounded-lg">
-              Last 30 dias
+              Ultimos 30 dias
             </SelectItem>
             <SelectItem value="7d" className="rounded-lg">
-              Last 7 dias
+              Ultimos 7 dias
             </SelectItem>
           </SelectContent>
         </Select>
