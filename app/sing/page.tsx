@@ -6,12 +6,10 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-
-
-export default function singUp() {
+export default function SignUp() {
   return (
     <div className="flex min-h-screen">
-      {/* Left Panel */}
+      {/* Painel Esquerdo */}
       <div className="flex w-1/2 flex-col justify-between bg-green-600 p-12">
         <div className="flex flex-col items-center text-center text-white">
           <h1 className="mb-2 text-2xl font-bold">Pleno Sol</h1>
@@ -23,16 +21,18 @@ export default function singUp() {
         </div>
       </div>
 
-      {/* Right Panel */}
+      {/* Painel Direito */}
       <div className="flex w-1/2 flex-col justify-between p-12">
+        {/* Link para solicitar acesso */}
         <div className="flex justify-end">
           <div className="text-sm text-slate-600">
             <Link href="/create-account" className="text-emerald-600 hover:underline">
-              Solicitar usuário
+              SOLICITAR ACESSO
             </Link>
           </div>
         </div>
 
+        {/* Formulário de Login */}
         <div className="mx-auto w-full max-w-sm">
           <div className="mb-8">
             <h2 className="text-2xl font-semibold">Login</h2>
@@ -40,6 +40,7 @@ export default function singUp() {
           </div>
 
           <form className="space-y-6">
+            {/* Campo de ID */}
             <div className="space-y-2">
               <Label htmlFor="ID">Conta ID</Label>
               <Input
@@ -50,6 +51,7 @@ export default function singUp() {
               />
             </div>
 
+            {/* Campo de Senha */}
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <Label htmlFor="password">Senha</Label>
@@ -77,6 +79,7 @@ export default function singUp() {
               </div>
             </div>
 
+            {/* Checkbox Lembrar-se */}
             <div className="flex items-center space-x-2">
               <Checkbox id="remember" />
               <Label htmlFor="remember" className="text-sm font-normal">
@@ -84,13 +87,15 @@ export default function singUp() {
               </Label>
             </div>
 
-            
+            {/* Botão de Login */}
+
+            <Link href="/dash_pleno_sol" className="text-emerald-600 hover:underline">
 
             <Button className="h-12 w-full bg-green-800 text-white hover:bg-green-700">
               Entrar
             </Button>
+            </Link>
 
-            
           </form>
         </div>
       </div>
