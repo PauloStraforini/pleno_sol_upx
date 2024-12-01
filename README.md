@@ -36,7 +36,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
-## 🌞 PlenoSol
+# 🌞 PlenoSol
 PlenoSol é uma aplicação voltada para o monitoramento e gestão de sistemas de energia solar. Nossa solução permite acompanhar a produção de energia, avaliar a eficiência dos painéis solares e receber alertas para manutenção. Além disso, geramos relatórios mensais detalhados para ajudar na tomada de decisões.
 
 # 🎯 Objetivo
