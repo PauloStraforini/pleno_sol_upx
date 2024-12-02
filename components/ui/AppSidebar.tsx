@@ -34,10 +34,11 @@ const data = {
     {
       title: "CONTROLE ENERGÉTICO",
       url: "#",
-      items: [
+      items: [ 
         {
           title: "Ganhos",
           url: "#",
+          
         },
         {
           title: "Utilizados",
