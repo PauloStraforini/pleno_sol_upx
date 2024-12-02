@@ -27,7 +27,7 @@ const data = {
         },
         {
           title: "Projeção de Gastos",
-          url: "#",
+          url: "",
         },
       ],
     },
@@ -42,12 +42,12 @@ const data = {
         },
         {
           title: "Utilizados",
-          url: "#",
+          url: "/dash_util",
           isActive: true,
         },
         {
           title: "Gastos",
-          url: "#",
+          url: "/dash_gastos",
         },
         
       ],
