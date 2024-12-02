@@ -97,7 +97,7 @@ export default function FirsPage() {
           <h2 className="mb-12 text-center text-3xl font-bold">
             SISTEMAS DE PAINÉIS SOLARES INSTALADOS POR ESPECIALISTAS
             <br />
-            PARA EMPRESAS, FAZENDAS E RESIDÊNCIAS
+            PARA EMPRESAS, CONDOMÍNIOS E RESIDÊNCIAS
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
             {[

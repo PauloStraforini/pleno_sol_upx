@@ -89,7 +89,7 @@ export default function SignUp() {
 
             {/* Botão de Login */}
 
-            <Link href="/dash_pleno_sol" className="text-emerald-600 hover:underline">
+            <Link href="/dashboards" className="text-emerald-600 hover:underline">
 
             <Button className="h-12 w-full bg-green-800 text-white hover:bg-green-700">
               Entrar
