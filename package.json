@@ -42,6 +42,7 @@
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.5.1",
+    "express": "^4.21.1",
     "input-otp": "^1.4.1",
     "lucide": "^0.462.0",
     "lucide-react": "^0.462.0",
@@ -60,13 +61,23 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.17.9",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.16",
     "postcss": "^8",
+    "prisma": "^6.0.1",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  }
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
