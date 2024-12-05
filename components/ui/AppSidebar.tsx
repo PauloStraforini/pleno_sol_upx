@@ -36,7 +36,7 @@ const data = {
       url: "#",
       items: [ 
         {
-          title: "Ganhos",
+          title: "Acumulados",
           url: "#",
           
           
