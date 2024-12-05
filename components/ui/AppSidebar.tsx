@@ -26,8 +26,8 @@ const data = {
           url: "#",
         },
         {
-          title: "Projeção de Gastos",
-          url: "",
+          title: "Gerenciar",
+          url: "dash_gerenciar",
         },
       ],
     },
