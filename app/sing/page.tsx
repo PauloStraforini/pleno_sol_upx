@@ -65,7 +65,7 @@ export default function SignUp() {
           </div>
 
           {/* Botão de Login */}
-          <Link href="/dash_ganhos">
+          <Link href="/dash_gerenciar">
             <Button className="h-12 w-full bg-green-600 text-white hover:bg-green-700">
               Entrar
             </Button>
