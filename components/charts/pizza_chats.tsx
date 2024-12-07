@@ -87,7 +87,7 @@ export function Pizza_Charts() {
           Economizou 8.2% nesse mês <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+          Valor total economizado: R$ 1.200,00
         </div>
       </CardFooter>
     </Card>
