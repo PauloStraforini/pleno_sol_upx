@@ -1,10 +1,8 @@
-
+import { Component,  } from "@/components/charts/bar_charts_mult"
 import { Big_Chart } from "@/components/charts/big_chart"
 import { Pie_Charts } from "@/components/charts/line_charts"
 import { Pizza_Charts } from "@/components/charts/pizza_chats"
 import { AppSidebar } from "@/components/ui/AppSidebar"
-import { Bar_ruby,} from "@/components/charts/bar_ruby"
-import { Pie_ruby } from "@/components/charts/pie_ruby"
 
 
 import {
@@ -49,7 +47,7 @@ export default function Dashboard() {
         <div className="flex flex-1 flex-col gap-4 p-4">
           <div className="grid auto-rows-min gap-4 md:grid-cols-3">
             <section >
-              <Bar_ruby/>
+              <Component />
             </section>
             
             <section>
@@ -57,7 +55,7 @@ export default function Dashboard() {
             </section>
             
             <section>
-              <Pie_ruby/>
+              <Pie_Charts />
             </section>
 
           </div>
