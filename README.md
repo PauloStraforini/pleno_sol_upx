@@ -52,5 +52,5 @@ O objetivo do PlenoSol é otimizar a gestão de sistemas de energia solar, sejam
 📝 Geração de relatórios mensais com insights detalhados de desempenho.
 🚨 Alertas proativos sobre necessidade de manutenção.
 
-![Pleno Sol Banner](components/img/dashboard.png)
 
+![Pleno Sol Banner](components/img/dashboard.png)
