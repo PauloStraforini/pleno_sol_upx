@@ -31,7 +31,7 @@ type CardProps = React.ComponentProps<typeof Card>
 
 export function CardOfficial({ className, ...props }: CardProps) {
   return (
-    <Card className={cn("w-[380px]", className)} {...props}>
+    <Card className={cn("w-[500px]", className)} {...props}>
       <CardHeader>
         <CardTitle>Notificações</CardTitle>
         <CardDescription>Vôce tem 3 mensagens não lidas.</CardDescription>
