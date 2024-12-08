@@ -72,7 +72,7 @@ export default function PaymentUser() {
             <DropdownMenuTrigger asChild>
               <Button variant="outline" className="border-green-700 text-white ">
                 Columns
-                <ChevronDown className="ml-2 h-4 w-4" />
+                <ChevronDown className=" h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="bg-[#0A0C10] border-zinc-800">

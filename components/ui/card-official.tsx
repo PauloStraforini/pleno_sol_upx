@@ -1,5 +1,6 @@
-import { BellRing, Check } from "lucide-react"
+'use client'
 
+import { BellRing, Check } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -14,7 +15,7 @@ import { Switch } from "@/components/ui/switch"
 
 const notifications = [
   {
-    title: "Proxima semana de muita chuva!",
+    title: "Próxima semana de muita chuva!",
     description: "1 hora atrás",
   },
   {
@@ -31,17 +32,17 @@ type CardProps = React.ComponentProps<typeof Card>
 
 export function CardOfficial({ className, ...props }: CardProps) {
   return (
-    <Card className={cn("w-[500px]", className)} {...props}>
+    <Card className={cn("w-full max-w-[380px]", className)} {...props}>
       <CardHeader>
         <CardTitle>Notificações</CardTitle>
-        <CardDescription>Vôce tem 3 mensagens não lidas.</CardDescription>
+        <CardDescription>Você tem 3 mensagens não lidas.</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
-        <div className=" flex items-center space-x-4 rounded-md border p-4">
-          <BellRing />
+        <div className="flex items-center space-x-4 rounded-md border p-4">
+          <BellRing className="h-5 w-5 text-primary" />
           <div className="flex-1 space-y-1">
             <p className="text-sm font-medium leading-none">
-              Ative o cininho
+              Ative o sininho
             </p>
             <p className="text-sm text-muted-foreground">
               Para receber notificações.
@@ -49,13 +50,13 @@ export function CardOfficial({ className, ...props }: CardProps) {
           </div>
           <Switch />
         </div>
-        <div>
+        <div className="space-y-4">
           {notifications.map((notification, index) => (
             <div
               key={index}
-              className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0"
+              className="grid grid-cols-[25px_1fr] items-start gap-2"
             >
-              <span className="flex h-2 w-2 translate-y-1 rounded-full bg-green-400" />
+              <span className="flex h-2 w-2 translate-y-1 rounded-full bg-green-500" />
               <div className="space-y-1">
                 <p className="text-sm font-medium leading-none">
                   {notification.title}
@@ -70,9 +71,10 @@ export function CardOfficial({ className, ...props }: CardProps) {
       </CardContent>
       <CardFooter>
         <Button className="w-full">
-          <Check /> marca todas como lidas
+          <Check className="mr-2 h-4 w-4" /> Marcar todas como lidas
         </Button>
       </CardFooter>
     </Card>
   )
 }
+
