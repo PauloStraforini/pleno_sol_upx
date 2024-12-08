@@ -39,11 +39,18 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # 🌞 PlenoSol
 PlenoSol é uma aplicação voltada para o monitoramento e gestão de sistemas de energia solar. Nossa solução permite acompanhar a produção de energia, avaliar a eficiência dos painéis solares e receber alertas para manutenção. Além disso, geramos relatórios mensais detalhados para ajudar na tomada de decisões.
 
+![Pleno Sol Banner](components/img/landingpage.png)
+
 # 🎯 Objetivo
 O objetivo do PlenoSol é otimizar a gestão de sistemas de energia solar, sejam eles residenciais ou comerciais. A aplicação oferece funcionalidades essenciais para garantir o melhor desempenho e aproveitamento da energia gerada:
 
-📊 Cálculo da energia gerada diariamente para monitoramento em tempo real.
+![Pleno Sol Banner](components/img/areauser.png)
+
+ 📊 Cálculo da energia gerada diariamente para monitoramento em tempo real.
 ⚡ Análise de eficiência dos painéis solares.
 🕒 Registro histórico de produção de energia.
 📝 Geração de relatórios mensais com insights detalhados de desempenho.
 🚨 Alertas proativos sobre necessidade de manutenção.
+
+
+![Pleno Sol Banner](components/img/dashboard.png)
