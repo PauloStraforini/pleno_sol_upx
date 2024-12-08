@@ -1,7 +1,7 @@
 import { Component,  } from "@/components/charts/bar_charts_mult"
 import { Big_Chart } from "@/components/charts/big_chart"
 import { Pie_Charts } from "@/components/charts/line_charts"
-
+import { Pizza_Charts } from "@/components/charts/pizza_chats"
 import { AppSidebar } from "@/components/ui/AppSidebar"
 
 
@@ -13,10 +13,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-
-
-
-
+import { CardOfficial } from "@/components/ui/card-official"
 import { Separator } from "@/components/ui/separator"
 import {
   SidebarInset,
@@ -24,10 +21,6 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import SupportChat from "@/components/ui/support-chat"
-import PaymentUser from "@/components/ui/table-use"
-
-
-
 
 export default function Dashboard() {
   return (
@@ -53,18 +46,18 @@ export default function Dashboard() {
             </BreadcrumbList>
           </Breadcrumb>
         </header>
-        <div className="flex flex-3 flex-col gap-3 p-3">
+        <div className="flex flex-1 flex-col gap-4 p-4">
           <div className="grid auto-rows-min gap-4 md:grid-cols-3">
             <section >
+              <Component />
+            </section>
+            
+            <section>
+              <CardOfficial/>
+            </section>
+            
+            <section>
               <SupportChat />
-            </section>
-            
-            <section>
-              <PaymentUser/>
-            </section>
-            
-            <section>
-              
             </section>
 
           </div>
