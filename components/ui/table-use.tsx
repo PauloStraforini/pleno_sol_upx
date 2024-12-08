@@ -20,106 +20,108 @@ import {
 
 interface Payment {
   id: string
-  status: "Success" | "Processing" | "Failed"
-  email: string
-  amount: number
+  status: "Sucesso" | "Processando" | "Erro"
+  data: string
+  valor: number
 }
 
 const payments: Payment[] = [
-  {
-    id: "1",
-    status: "Success",
-    email: "ken99@yahoo.com",
-    amount: 316.00,
-  },
-  {
-    id: "2",
-    status: "Success",
-    email: "abe45@gmail.com",
-    amount: 242.00,
-  },
-  {
-    id: "3",
-    status: "Processing",
-    email: "monserrat44@gmail.com",
-    amount: 837.00,
-  },
+
   {
     id: "4",
-    status: "Failed",
-    email: "carmella@hotmail.com",
-    amount: 721.00,
+    status: "Erro",
+    data: "14/12/2025",
+    valor: 721.00,
   },
+
+  {
+    id: "3",
+    status: "Processando",
+    data: "03/09/2025",
+    valor: 837.00,
+  },
+
+  {
+    id: "1",
+    status: "Sucesso",
+    data: "03/07/2025",
+    valor: 316.00,
+  },
+  
+  {
+    id: "2",
+    status: "Sucesso",
+    data: "03/05/2025",
+    valor: 242.00,
+  }
+  
+  
 ]
 
 export default function PaymentUser() {
   return (
-    <Card className="w-full max-w-3xl bg-[#0A0C10] text-white border-[#1D2432]">
-      <CardHeader className="pb-4">
-        <CardTitle className="text-xl font-semibold">Payments</CardTitle>
-        <p className="text-sm text-zinc-400">Manage your payments.</p>
+    <Card className="w-full max-w-6xl bg-[#0A0C10] text-white border-zinc-800">
+      <CardHeader className="pb-10">
+        <CardTitle className="text-xl font-semibold">Pagamentos</CardTitle>
+        <p className="text-sm text-zinc-400">Controle das faturas</p>
       </CardHeader>
       <CardContent>
         <div className="flex items-center justify-between mb-4">
-          <Input
-            placeholder="Filter emails..."
-            className="max-w-xs bg-[#0A0C10] border-[#1D2432] text-white placeholder:text-zinc-500"
-          />
+          
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="border-[#1D2432] text-white hover:bg-[#1D2432]">
+              <Button variant="outline" className="border-green-700 text-white ">
                 Columns
                 <ChevronDown className="ml-2 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="bg-[#0A0C10] border-[#1D2432]">
-              <DropdownMenuItem className="text-white hover:bg-[#1D2432]">
+            <DropdownMenuContent align="end" className="bg-[#0A0C10] border-zinc-800">
+              <DropdownMenuItem className="text-white hover:bg-green-500">
                 Status
               </DropdownMenuItem>
-              <DropdownMenuItem className="text-white hover:bg-[#1D2432]">
-                Email
+              <DropdownMenuItem className="text-white hover:border-zinc-800">
+                Data
               </DropdownMenuItem>
-              <DropdownMenuItem className="text-white hover:bg-[#1D2432]">
-                Amount
+              <DropdownMenuItem className="text-white hover:border-zinc-800">
+                Valor
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <div className="border rounded-md border-[#1D2432]">
+        <div className="border rounded-md border-zinc-800">
           <Table>
             <TableHeader>
-              <TableRow className="border-[#1D2432] hover:bg-transparent">
+              <TableRow className="border-zinc-800 hover:bg-transparent">
                 <TableHead className="w-12">
                   <Checkbox className="border-zinc-500" />
                 </TableHead>
                 <TableHead className="text-zinc-400 font-medium">Status</TableHead>
                 <TableHead className="text-zinc-400 font-medium">
                   <div className="flex items-center gap-1">
-                    Email
+                    Data
                     <ChevronUp className="h-4 w-4" />
                   </div>
                 </TableHead>
-                <TableHead className="text-zinc-400 font-medium">Amount</TableHead>
+                <TableHead className="text-zinc-400 font-medium">Valor</TableHead>
                 <TableHead className="w-12"></TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {payments.map((payment) => (
-                <TableRow key={payment.id} className="border-[#1D2432] hover:bg-[#1D2432]/50">
+                <TableRow key={payment.id} className="border-zinc-800 hover:border-zinc-800">
                   <TableCell>
                     <Checkbox className="border-zinc-500" />
                   </TableCell>
                   <TableCell>
                     <span className={`inline-block ${
-                      payment.status === "Success" ? "text-green-500" :
-                      payment.status === "Processing" ? "text-blue-500" :
-                      "text-red-500"
+                      payment.status === "Sucesso" ? "text-green-500" :
+                      payment.status === "Processando" ? "text-blue-500" : "text-red-500"
                     }`}>
                       {payment.status}
                     </span>
                   </TableCell>
-                  <TableCell>{payment.email}</TableCell>
-                  <TableCell>${payment.amount.toFixed(2)}</TableCell>
+                  <TableCell>{payment.data}</TableCell>
+                  <TableCell>${payment.valor.toFixed(2)}</TableCell>
                   <TableCell>
                     <Button variant="ghost" size="icon" className="hover:bg-[#1D2432]">
                       <MoreHorizontal className="h-4 w-4 text-zinc-400" />
@@ -131,22 +133,15 @@ export default function PaymentUser() {
           </Table>
         </div>
         <div className="flex items-center justify-between mt-4 text-sm text-zinc-400">
-          <div>0 of 4 row(s) selected.</div>
+          
           <div className="flex gap-2">
+          
             <Button
               variant="outline"
               size="sm"
-              disabled
-              className="border-[#1D2432] text-white hover:bg-[#1D2432] disabled:opacity-50"
+              className="border-green-700 text-white hover:bg-zinc-700"
             >
-              Previous
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              className="border-[#1D2432] text-white hover:bg-[#1D2432]"
-            >
-              Next
+              Pagar
             </Button>
           </div>
         </div>

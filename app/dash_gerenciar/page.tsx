@@ -53,7 +53,7 @@ export default function Dashboard() {
             </BreadcrumbList>
           </Breadcrumb>
         </header>
-        <div className="flex flex-1 flex-col gap-4 p-4">
+        <div className="flex flex-3 flex-col gap-3 p-3">
           <div className="grid auto-rows-min gap-4 md:grid-cols-3">
             <section >
               <SupportChat />
