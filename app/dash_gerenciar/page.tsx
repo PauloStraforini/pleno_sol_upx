@@ -21,6 +21,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import SupportChat from "@/components/ui/support-chat"
+import { SearchX } from "lucide-react"
 
 export default function Dashboard() {
   return (
@@ -49,15 +50,15 @@ export default function Dashboard() {
         <div className="flex flex-1 flex-col gap-4 p-4">
           <div className="grid auto-rows-min gap-4 md:grid-cols-3">
             <section >
-              <Component />
+              <CardOfficial />
             </section>
             
             <section>
-              <CardOfficial/>
+              <SupportChat/>
             </section>
             
             <section>
-              <SupportChat />
+              <Pie_Charts/>
             </section>
 
           </div>

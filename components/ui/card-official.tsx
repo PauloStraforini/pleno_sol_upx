@@ -37,7 +37,7 @@ export function CardOfficial({ className, ...props }: CardProps) {
         <CardTitle>Notificações</CardTitle>
         <CardDescription>Você tem 3 mensagens não lidas.</CardDescription>
       </CardHeader>
-      <CardContent className="grid gap-4">
+      <CardContent className="grid gap-14">
         <div className="flex items-center space-x-4 rounded-md border p-4">
           <BellRing className="h-5 w-5 text-primary" />
           <div className="flex-1 space-y-1">

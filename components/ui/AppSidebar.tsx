@@ -37,7 +37,7 @@ const data = {
       items: [ 
         {
           title: "Acumulados",
-          url: "#",
+          url: "/dash_acumulados",
           
           
         },
